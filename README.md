@@ -26,7 +26,7 @@ kubectl expose pod micro-service-one --type=NodePort --name micro-service-one
 kubectl expose pod micro-service-two --type=NodePort --name micro-service-two
 ```
 
-##Testing the services
+## Testing the services
 ```
 minikube service micro-service-one --url
 # should output an endpoint url
