@@ -1,13 +1,10 @@
 micro-service-1/node_modules/
 micro-service-1/.idea
-micro-service-1/.env
 
 micro-service-2/node_modules/
 micro-service-2/.idea
-micro-service-2/.env
 
 micro-service-3/node_modules/
 micro-service-3/.idea
-micro-service-3/.env
 
 .idea
