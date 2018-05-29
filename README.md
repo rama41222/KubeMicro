@@ -14,7 +14,7 @@ docker build ./ -t <dockerhub username>/m2
 docker push <dockerhub username>/m2
 ```
 
-### Setup kubernetes
+## Setup kubernetes
 cd into the kube folder
 ```
 kubectl create -f pod-micro-serivce-one.yaml
@@ -26,7 +26,7 @@ kubectl expose pod micro-service-one --type=NodePort --name micro-service-one
 kubectl expose pod micro-service-two --type=NodePort --name micro-service-two
 ```
 
-### Testing the services
+##Testing the services
 ```
 minikube service micro-service-one --url
 # should output an endpoint url
