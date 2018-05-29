@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: micro-service-two
+  name: micro-service-two
+spec:
+  containers:
+  - name: micro-service-two
+    image: rama41222/m2
+    ports:
+    - containerPort: 3001
