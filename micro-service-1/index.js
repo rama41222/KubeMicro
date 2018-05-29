@@ -7,8 +7,11 @@ const app = express()
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-
 app.get('/', (req, res) => {
+  res.status(200).json({ message: "Hello from Service 1"})
+})
+
+app.get('/services', (req, res) => {
   axios.get('http://localhost:3001/')
     .then(response => {
       res.status(200).send(response.data);
