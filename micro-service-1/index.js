@@ -8,11 +8,11 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.status(200).json({ message: "Hello from Service 1"})
+  res.status(200).json({ message: "Hello from micro-service-one"})
 })
 
 app.get('/services', (req, res) => {
-  axios.get('http://localhost:3001/')
+  axios.get('http://micro-service-two:3001/')
     .then(response => {
       res.status(200).send(response.data);
     })
